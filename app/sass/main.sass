@@ -32,16 +32,37 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
 	color: #666
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
 
-html, body
-	height: 100%
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+	display: block
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
 
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
-	font-family: $default-font
+	line-height: normal
+	font-family: 'Muli', sans-serif
 	overflow-x: hidden
 
 .img-responsive
@@ -51,6 +72,381 @@ body
 
 .text-center
 	text-align: center
-
+.container
+	max-width: 1052px
+	width: 100%
+	padding: 0 30px
+	margin: 0 auto
+	position: relative
+	&_fluid
+		max-width: 1280px
+		width: 100%
+.header
+	background: linear-gradient(354deg, #54c8fc, #14007a)
+	padding: 30px 0 70px
+	position: relative
+	overflow: hidden
+	&_inner
+		background: #ffffff
+		&:after, &:before
+			display: none
+	&:after
+		content: ''
+		position: absolute
+		background: #ffffff
+		width: 10%
+		height: 500px
+		right: -6%
+		bottom: -200px
+		transform: rotate(40deg)
+	&:before
+		content: ''
+		position: absolute
+		background: #ffffff
+		width: 120%
+		height: 500px
+		left: -10%
+		bottom: -405px
+		transform: rotate(5deg)
+	&-btn
+		font-size: 0
+	&-main
+		padding-top: 110px
+		text-align: right
+		position: relative
+		font-size: 0
+		z-index: 3
+		&-img
+			max-width: 100%
+	&-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-left
+		display: flex
+		align-items: center
+		justify-content: flex-start
+	&-title
+		font-size: 20px
+		color: #ffffff
+		text-transform: uppercase
+		font-weight: 800
+		&_blue
+			color: #4b74ff
+	&-img
+		width: 48px
+		height: 43px
+		margin-right: 25px
+		&_mobile
+			width: 29px
+			height: 26px
+			margin: 0
+	&-right
+		&-list
+			display: flex
+			align-items: center
+			justify-content: flex-end
+		&-item
+			padding: 0 20px
+		&-link
+			color: #ffffff
+			text-decoration: none
+			font-size: 16px
+			&_dark
+				color: #0e0e0e
+		&-btn
+			font-size: 16px
+			color: #4b74ff
+			background: #ffffff
+			height: 48px
+			line-height: 48px
+			display: flex
+			align-items: center
+			text-decoration: none
+			padding: 0 40px 0 30px
+			box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.14)
+			border-radius: 11px
+			&_blue
+				background: #4b74ff
+				color: #ffffff
+		&-svg
+			width: 23px
+			height: 21px
+			margin-right: 10px
+	&-post
+		width: 480px
+		background: #ffffff
+		box-shadow: 0 20px 21px 0 rgba(0, 0, 0, 0.07)
+		padding: 25px 50px 25px 25px
+		position: absolute
+		left: 0
+		bottom: 0
+		text-align: left
+		&-title
+			font-size: 40px
+			font-weight: bold
+			line-height: 1.33
+			font-family: 'Rajdhani', sans-serif
+			color: #000a12
+		&-text
+			font-size: 20px
+			letter-spacing: 0.1px
+			color: #4a4a4a
+			line-height: 1.45
+		&-row
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			margin-top: 20px
+			&_center
+				justify-content: center
+				margin: 40px 0 60px
+		&-item
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			margin-right: 15px
+		&-description
+			font-family: 'Roboto', sans-serif
+			font-size: 18px
+			line-height: 24px
+			letter-spacing: 0.1px
+			color: #778f9b
+			margin-left: 10px
+.menu
+	padding: 30px 0 60px
+	&-list
+		display: flex
+		align-items: flex-start
+		justify-content: center
+	&-item
+		font-size: 18px
+		line-height: 24px
+		letter-spacing: 0.1px
+		color: #4a4a4a
+		margin: 0 15px
+		cursor: pointer
+		&.active, &:hover
+			color: #4b74ff
+.post
+	background-color: #f7f8fb
+	position: relative
+	&_inner
+		background: #ffffff
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		background: #ffffff
+		width: 100%
+		height: 150px
+	&-row
+		display: flex
+		margin-bottom: 65px
+		align-items: center
+		justify-content: space-between
+	&-go
+		font-family: "Rajdhani"
+		font-size: 40px
+		font-weight: bold
+		line-height: 53px
+		color: #000a12
+	&-content
+		display: flex
+		//align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+	&-item
+		width: 49%
+		max-width: 480px
+		background: #ffffff
+		box-shadow: 0 20px 21px 0 rgba(0, 0, 0, 0.07)
+		margin-bottom: 65px
+		&-main
+			padding: 30px 30px 25px 30px
+		&-title
+			font-size: 24px
+			font-weight: 600
+			line-height: 1.3
+			letter-spacing: 0.2px
+			color: #000a12
+			margin-bottom: 15px
+		&-text
+			font-size: 18px
+			line-height: 1.3
+			letter-spacing: 0.1px
+			color: #4a4a4a
+			max-width: 360px
+		&-flex
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-top: 20px
+		&-name
+			font-family: "Roboto"
+			font-size: 18px
+			line-height: 1.3
+			letter-spacing: 0.1px
+			color: #778f9b
+		&-date
+			display: flex
+			align-items: center
+			justify-content: flex-end
+	&-more
+		padding: 20px 0 130px
+		text-align: center
+		&-link
+			font-size: 18px
+			font-weight: bold
+			line-height: 24px
+			letter-spacing: 0.1px
+			color: #4b74ff
+			text-decoration: none
+.footer
+	background: #000a12
+	padding: 60px 0 0
+	&-flex
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding: 0 0 130px
+	&-title
+		font-size: 16px
+		font-weight: bold
+		line-height: 27px
+		letter-spacing: 0.1px
+		color: #ffffff
+	&-menu
+		&-list
+			margin-top: 15px
+		&-item
+			padding: 15px 0
+		&-link
+			font-size: 16px
+			line-height: 29px
+			letter-spacing: 0.1px
+			color: #b7b7b7
+			text-decoration: none
+	&-bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 25px 0
+		border-top: 1px solid rgba(151, 151, 151, 0.5)
+		&-img
+			width: 24px
+			height: 22px
+		&-text
+			font-size: 16px
+			line-height: 24px
+			letter-spacing: 0.1px
+			color: #ffffff
+.subscribe
+	&-input
+		margin: 20px 0 10px
+		display: block
+		width: 100%
+		max-width: 270px
+		border: none
+		border-bottom: 1px solid #979797
+		background: transparent
+		font-size: 16px
+		line-height: 29px
+		letter-spacing: 0.1px
+		color: #b7b7b7
+		outline: none
+	&-btn
+		width: 100%
+		max-width: 270px
+		border-radius: 3px
+		height: 42px
+		line-height: 42px
+		background-color: #4b74ff
+		font-size: 18px
+		color: #ffffff
+		border: none
+		outline: none
+		cursor: pointer
+.follow
+	&-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 120px
+		margin-top: 15px
+	&-link
+		font-size: 0
+		&:hover
+			.follow-link-svg g
+				fill: #2d8eff
+.inner
+	padding: 10px 0 110px
+	&-img
+		margin-bottom: 60px
+	&-title
+		font-family: "Rajdhani"
+		font-size: 40px
+		font-weight: bold
+		line-height: 1.3
+		text-align: center
+		color: #000a12
+		margin-bottom: 20px
+	&-subtitle
+		font-size: 20px
+		line-height: 1.45
+		letter-spacing: 0.1px
+		text-align: center
+		color: #4a4a4a
+		max-width: 570px
+		margin: 0 auto
+	&-text
+		font-size: 21px
+		font-weight: 200
+		text-align: justify
+		color: #000a12
+		margin-bottom: 30px
+		&_big
+			font-size: 32px
+			font-weight: bold
+			margin-bottom: 70px
+.mobile
+	display: none
+	&-menu
+		&-overlay
+			width: 100%
+			height: 100vh
+			background: #000000
+			position: fixed
+			top: 0
+			left: 0
+			z-index: 5
+			overflow: auto
+			opacity: 0
+			pointer-events: none
+			transition: opacity .5s ease
+			&.active
+				pointer-events: auto
+				opacity: 1
+		&-content
+			padding: 30px
+		&-title
+			font-size: 22px
+			font-weight: bold
+			line-height: 1.23
+			letter-spacing: 0.1px
+			text-align: center
+			color: #ffffff
+			margin: 75px 0 50px
+		&-item
+			text-align: center
+			padding: 30px 0
+		&-link
+			font-size: 22px;
+			line-height: 1.32
+			letter-spacing: 0.1px
+			text-align: center
+			color: #b7b7b7
+			text-decoration: none
 
 @import "media" // Всегда в конце

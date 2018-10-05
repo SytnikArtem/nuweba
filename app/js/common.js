@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    console.log( "ready!" );
+    $('.header-btn').click(function() {
+        $('.mobile-menu-overlay').toggleClass('active');
+    })
 });
