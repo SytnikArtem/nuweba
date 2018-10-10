@@ -11,19 +11,19 @@
 		box-sizing: border-box
 
 *::-webkit-input-placeholder
-	color: #666
+	color: #000000
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: #000000
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: #000000
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: #000000
 	opacity: 1
 
 body input:focus:required:invalid,
@@ -81,6 +81,15 @@ body
 	&_fluid
 		max-width: 1280px
 		width: 100%
+.skew
+	background: linear-gradient(-345deg, #54c8fc 0%, #14007a 50% , #14007a 100%)
+	width: 100%
+	height: 1500px
+	display: block
+	position: absolute
+	left: 0
+	top: -875px
+	transform: skewY(-27deg)
 .header
 	background: linear-gradient(354deg, #54c8fc, #14007a)
 	padding: 30px 0 70px
@@ -90,24 +99,38 @@ body
 		background: #ffffff
 		&:after, &:before
 			display: none
-	&:after
-		content: ''
-		position: absolute
-		background: #ffffff
-		width: 10%
-		height: 500px
-		right: -6%
-		bottom: -200px
-		transform: rotate(40deg)
-	&:before
-		content: ''
-		position: absolute
-		background: #ffffff
-		width: 120%
-		height: 500px
-		left: -10%
-		bottom: -405px
-		transform: rotate(5deg)
+	&_main
+		background: none
+		padding-bottom: 200px
+		//&:before
+		//	content: ''
+		//	background: linear-gradient(354deg, #54c8fc, #14007a)
+		//	width: 100%
+		//	height: 100%
+		//	display: block
+		//	position: absolute
+		//	left: 0
+		//	bottom: 33%
+		//	transform: skewY(-27deg)
+	&_blog
+		&:after
+			content: ''
+			position: absolute
+			background: #ffffff
+			width: 10%
+			height: 500px
+			right: -6%
+			bottom: -200px
+			transform: rotate(40deg)
+		&:before
+			content: ''
+			position: absolute
+			background: #ffffff
+			width: 120%
+			height: 500px
+			left: -10%
+			bottom: -405px
+			transform: rotate(5deg)
 	&-btn
 		font-size: 0
 	&-main
@@ -116,8 +139,25 @@ body
 		position: relative
 		font-size: 0
 		z-index: 3
+		&_sm
+			max-width: 610px
+			padding: 150px 0 400px 110px
 		&-img
 			max-width: 100%
+		&-title
+			font-family: "Rajdhani"
+			font-size: 62px
+			font-weight: 500
+			line-height: 1.03
+			color: #ffffff
+			text-align: left
+		&-text
+			font-size: 21px
+			line-height: 1.33
+			letter-spacing: 0.1px
+			color: #ffffff
+			text-align: left
+			margin-top: 15px
 	&-flex
 		display: flex
 		align-items: center
@@ -152,6 +192,8 @@ body
 			color: #ffffff
 			text-decoration: none
 			font-size: 16px
+			&.active
+				color: #4b74ff
 			&_dark
 				color: #0e0e0e
 		&-btn
@@ -368,6 +410,8 @@ body
 		border: none
 		outline: none
 		cursor: pointer
+		&:hover
+			background: lighten(#4b74ff, 5%)
 .follow
 	&-flex
 		display: flex
@@ -448,5 +492,886 @@ body
 			text-align: center
 			color: #b7b7b7
 			text-decoration: none
-
+.decision
+	padding: 480px 0 0px
+	background: url(../img/grid-outline2.svg) no-repeat top -100px center
+	background-size: cover
+	margin-top: -530px
+	&-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 150px
+	&-left
+		max-width: 510px
+	&-top
+		position: absolute
+		top: -575px
+		left: -50px
+	&-top-left
+		position: absolute
+		right: -100px
+		top: -970px
+	&-subtitle
+		font-family: "Rajdhani"
+		font-size: 32px
+		font-weight: bold
+		line-height: 1.22
+		color: #000a12
+	&-text
+		font-size: 20px
+		line-height: 1.45
+		letter-spacing: 0.1px
+		color: #35363e
+		margin-top: 15px
+	&-right
+		margin-right: -70px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 650px
+			height: 500px
+			background: url(../img/bg-color.svg) no-repeat center
+			background-size: 650px 500px
+			right: 0
+			top: 80px
+.security
+	padding: 185px 0 100px
+	overflow: hidden
+	&-title
+		font-family: "Rajdhani"
+		font-size: 46px
+		font-weight: 500
+		line-height: 1.2
+		text-align: center
+		color: #000000
+	&-description
+		font-family: "Rajdhani"
+		font-size: 32px
+		font-weight: bold
+		line-height: 1.34
+		text-align: center
+		color: #000a12
+		margin-bottom: 110px
+	&-row
+		display: flex
+		justify-content: space-between
+		margin-top: 40px
+	&-item
+		max-width: 480px
+		width: 49%
+		padding: 15px 20px
+		border-radius: 12px
+		background-color: #ffffff
+		box-shadow: 0 8px 29px 0 rgba(95, 95, 95, 0.08)
+		min-height: 186px
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&:before
+			content: ''
+			position: absolute
+			display: block
+		&_first
+			&:before
+				width: 330px
+				height: 185px
+				background: url(../img/item1.svg) no-repeat center
+				left: -80px
+				top: -25px
+				z-index: -1
+		&-left
+			width: 110px
+			height: 110px
+			position: relative
+			flex-shrink: 0
+			display: flex
+			align-items: center
+			justify-content: center
+		&-firewall
+			width: 80px
+		&-fire
+			width: 35px
+			height: 57px
+			position: absolute
+			left: -2px
+			bottom: 5px
+		&-head
+			width: 45px
+			height: 65px
+			position: absolute
+			left: 12px
+			bottom: 0
+			z-index: 2
+		&_second
+			&:before
+				width: 330px
+				height: 185px
+				background: url(../img/item2.svg) no-repeat center
+				right: -80px
+				top: 0
+				z-index: -1
+		&_third
+			&:before
+				width: 305px
+				height: 185px
+				background: url(../img/item3.svg) no-repeat center
+				left: -55px
+				bottom: -25px
+				z-index: -1
+		&_fourth
+			&:before
+				width: 330px
+				height: 185px
+				background: url(../img/item4.svg) no-repeat center
+				right: -80px
+				top: 0
+				z-index: -1
+		&_fifth
+			&:before
+				width: 330px
+				height: 185px
+				background: url(../img/item5.svg) no-repeat center
+				left: -80px
+				top: 0
+				z-index: -1
+		&_sixth
+			&:before
+				width: 330px
+				height: 185px
+				background: url(../img/item6.svg) no-repeat center
+				right: -80px
+				top: 0
+				z-index: -1
+		&-title
+			font-size: 20px
+			font-weight: bold
+			line-height: 1.45
+			letter-spacing: 0.1px
+			color: #35363e
+		&-text
+			font-size: 16px
+			line-height: 1.81
+			letter-spacing: 0.1px
+			color: #35363e
+			margin-top: 10px
+.deep
+	padding: 60px 0 10px
+	&-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-left
+		margin-left: -70px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 775px
+			height: 330px
+			background: url(../img/bg.svg) no-repeat center
+			z-index: -1
+	&-right
+		&-title
+			font-family: "Rajdhani"
+			font-size: 32px
+			font-weight: bold
+			line-height: 1.34
+			color: #000a12
+		&-text
+			font-size: 20px
+			line-height: 1.45
+			letter-spacing: 0.1px
+			color: #35363e
+			margin-top: 20px
+	&-bottom
+		position: relative
+		margin-top: 200px
+		&:before
+			position: absolute
+			right: -45px
+			top: 135px
+			content: ''
+			background: url("../img/deep-svg.svg") no-repeat center
+			width: 1051px
+			height: 375px
+		&-left
+			display: inline-block
+			width: 640px
+			margin-left: -20px
+			margin-top: 215px
+		&-right
+			width: 640px
+			position: absolute
+			right: -20px
+			top: 0
+			&:before
+				position: absolute
+				content: ''
+				width: 305px
+				height: 260px
+				background: url(../img/leaf-copy.svg) no-repeat center
+				left: 130px
+				bottom: -130px
+				z-index: -1
+.click
+	padding: 50px 0 100px
+	position: relative
+	z-index: 2
+	&-title
+		font-family: "Rajdhani"
+		font-size: 62px
+		font-weight: 500
+		line-height: 1.05
+		text-align: center
+		color: #000000
+	&-text
+		font-size: 20px
+		line-height: 1.45
+		letter-spacing: 0.1px
+		text-align: center
+		color: #4a4a4a
+		margin: 30px auto 0
+		max-width: 760px
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 750px
+		margin: 100px auto 0
+		border-radius: 12px
+		padding: 30px 50px
+		background-color: #ffffff
+		box-shadow: 0 8px 29px 0 rgba(95, 95, 95, 0.08)
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 550px
+			height: 205px
+			background: url(../img/click-bg.svg) no-repeat center
+			left: -80px
+			bottom: -70px
+			z-index: -1
+	&-left
+		flex-shrink: 0
+	&-right
+		width: 100%
+		margin-left: 35px
+		&-text
+			font-family: "Rajdhani"
+			font-size: 32px
+			font-weight: 600
+			line-height: 1.22
+			color: #000000
+	&-bottom
+		margin: 240px auto 0
+		border-radius: 12px
+		background-color: #ffffff
+		box-shadow: 0 8px 29px 0 rgba(95, 95, 95, 0.08)
+		max-width: 750px
+		padding: 35px 100px 30px
+		position: relative
+		&-fire
+			position: absolute
+			top: 0
+			z-index: -1
+			&_left
+				left: -115px
+			&_right
+				right: -115px
+				transform: scaleX(-1)
+			&_lefttribe
+				top: 75px
+				left: -93px
+			&_righttribe
+				top: 75px
+				right: -93px
+				transform: scaleX(-1)
+		&:before
+			content: ''
+			position: absolute
+			width: 450px
+			height: 205px
+			background: url(../img/bottom.svg) no-repeat center
+			left: -85px
+			top: -45px
+			z-index: -1
+		&-title
+			font-family: "Rajdhani"
+			font-size: 32px
+			font-weight: bold
+			line-height: 1.34
+			text-align: center
+			color: #000a12
+		&-text
+			font-size: 20px
+			font-weight: 600
+			line-height: 1.5
+			letter-spacing: 0.2px
+			text-align: center
+			color: #4a4a4a
+			margin-top: 15px
+		&-autor
+			font-size: 20px
+			font-weight: 600
+			line-height: 1.35
+			letter-spacing: 0.1px
+			text-align: center
+			color: #000a12
+			margin-top: 30px
+		&-description
+			font-size: 16px
+			line-height: 1.5
+			letter-spacing: 0.1px
+			text-align: center
+			color: #9b9b9b
+	&-line
+		position: absolute
+		width: 920px
+		left: -85px
+		bottom: 150px
+		z-index: -1
+		&-left
+			left: 0
+			position: absolute
+			top: 0
+			transform: scaleX(-1)
+		&-right
+			right: 0
+			position: absolute
+			top: 0
+		&-center
+			left: 23%
+			position: absolute
+			top: -40px
+	&-platforms
+		margin-top: 150px
+		&_sm
+			margin-top: 70px
+		&-title
+			font-size: 20px
+			font-weight: 200
+			line-height: 1.45
+			letter-spacing: 0.1px
+			text-align: center
+			color: #35363e
+		&-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-top: 30px
+		&-item
+			min-width: 64px
+			margin: 0 15px
+			text-align: center
+.load
+	padding: 450px 0 150px
+	position: relative
+	margin-top: -215px
+	z-index: 1
+	&:before
+		position: absolute
+		left: 0
+		top: 0
+		content: ''
+		width: 100%
+		height: 100%
+		background: linear-gradient(to bottom, #14007a, #54c8fc)
+		transform: skewY(-5deg)
+	&-flex
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&-left
+		width: 440px
+		position: relative
+		&-img
+			position: relative
+			z-index: 2
+		&-fire
+			position: absolute
+			z-index: 1
+			top: 115px
+			left: -30px
+		&-fire2
+			transform: scaleX(-1) rotate(25deg)
+			top: 0
+			right: -6px
+			position: absolute
+		&-leaf
+			position: absolute
+			left: -7px
+			bottom: -15px
+	&-right
+		margin: 50px 0 0 120px
+		&-title
+			font-family: "Rajdhani"
+			font-size: 32px
+			font-weight: bold
+			line-height: 1.34
+			color: #ffffff
+		&-subtitle
+			font-family: "Rajdhani"
+			font-size: 46px
+			font-weight: 500
+			line-height: 1.2
+			color: #ffffff
+			margin-top: 15px
+	&-btn
+		margin-top: 45px
+		width: 390px
+		height: 85px
+		background: #4b74ff
+		border-radius: 8px
+		box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.14), 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+		border: none
+		outline: none
+		font-size: 22px
+		font-weight: bold
+		text-align: center
+		color: #ffffff
+		cursor: pointer
+		&:hover
+			background: lighten(#4b74ff, 5%)
+	&-slider
+		margin-top: 100px
+		&-title
+			font-family: "Rajdhani"
+			font-size: 46px
+			font-weight: 500
+			line-height: 1.39
+			text-align: center
+			color: #ffffff
+			margin-bottom: 50px
+		&-top
+			width: 100%
+			height: 130px
+			background: #ffffff
+		&-bottom
+			padding: 20px
+	&-item
+		width: 375px
+		&-title
+			font-size: 24px
+			font-weight: 600
+			line-height: 1.33
+			letter-spacing: 0.2px
+			color: #ffffff
+			margin-bottom: 5px
+		&-text
+			font-family: "Roboto"
+			font-size: 18px
+			line-height: 1.33
+			letter-spacing: 0.1px
+			color: #ffffff
+.mob
+	display: none
+.load-item
+	margin: 0 10px
+.slick-slide
+	outline: none
+.load-slider .slick-dots li button:before
+  font-size: 15px
+.load-slider .slick-dots li button:before
+  color: #f6f6f6
+  opacity: 0.5
+.load-slider .slick-dots li.slick-active button:before
+  color: #464646
+  opacity: 1
+.load-slider .slick-dots li
+  margin: 0 3px
+.load-slider .slick-dotted.slick-slider
+	padding-bottom: 40px
+.contact
+	padding: 200px 0 245px
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		width: 182px
+		height: 246px
+		background: url(../img/leaf-copy-5.svg) no-repeat center
+		top: 0
+		left: 0
+		z-index: 2
+	&:after
+		position: absolute
+		content: ''
+		width: 205px
+		height: 248px
+		background: url(../img/leaf-copy-6.svg) no-repeat center
+		top: -235px
+		right: 0
+		z-index: 2
+	&-flex
+		display: flex
+		justify-content: space-between
+	&-left
+		width: 360px
+		flex-shrink: 0
+		&-title
+			font-family: "Rajdhani"
+			font-size: 58px
+			font-weight: bold
+			line-height: 1.09
+			color: #000000
+		&-text
+			font-size: 20px
+			line-height: 1.45
+			letter-spacing: 0.1px
+			color: #4a4a4a
+	&-right
+		width: 510px
+		&-input
+			width: 100%
+			padding: 15px 10px
+			border: none
+			border-bottom: 1px solid #979797
+			font-size: 16px
+			font-weight: 300
+			color: #000000
+			outline: none
+			margin-bottom: 30px
+		&-btn
+			border-radius: 12px
+			box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.14)
+			background-color: #4b74ff
+			font-size: 22px
+			font-weight: bold
+			text-align: center
+			color: #ffffff
+			width: 100%
+			height: 85px
+			text-transform: uppercase
+			cursor: pointer
+			margin-top: 35px
+			&:hover
+				background: lighten(#4b74ff, 5%)
+	&-after
+		position: absolute
+		z-index: -1
+		bottom: -175px
+		left: 0
+.circle
+	width: 4px
+	height: 4px
+	border-radius: 50%
+	background: rgba(255, 255, 255, 0.34)
+	box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.35)
+	position: absolute
+	&_left
+		left: 0
+		bottom: 0
+	&_right
+		right: 0
+		top: 20px
+	&_top
+		top: 0
+		right: 30px
+.load-center-shine
+	width: 70px
+	height: 45px
+	position: absolute
+	left: 50%
+	top: 350px
+.load-left-shine
+	position: absolute
+	width: 35px
+	height: 55px
+	left: 0
+	top: 50px
+.header-right-shine
+	position: absolute
+	width: 70px
+	height: 45px
+	right: 170px
+	top: 100px
+.header-left-shine
+	position: absolute
+	width: 70px
+	height: 45px
+	left: -50px
+	top: 190px
+	transform: scaleX(-1)
+.header-left-shine2
+	position: absolute
+	width: 10px
+	height: 10px
+	left: -70px
+	top: 270px
+	opacity: .5
+.header-left-shine3
+	position: absolute
+	width: 10px
+	height: 10px
+	left: -80px
+	top: 0
+	opacity: .5
+.header-left-shine4
+	position: absolute
+	width: 10px
+	height: 10px
+	left: 20px
+	top: 80px
+	opacity: .5
+.header-left-shine5
+	position: absolute
+	width: 10px
+	height: 10px
+	left: 300px
+	top: 50px
+	opacity: .5
+.header-left-shine6
+	position: absolute
+	width: 10px
+	height: 10px
+	left: 395px
+	top: 155px
+	opacity: .5
+.header-left-shine7
+	position: absolute
+	width: 10px
+	height: 10px
+	left: 300px
+	top: 265px
+	opacity: .5
+.header-left-shine8
+	position: absolute
+	width: 10px
+	height: 10px
+	right: -100px
+	top: 175px
+	opacity: .8
+.header-left-shine9
+	position: absolute
+	width: 10px
+	height: 10px
+	right: -65px
+	top: 325px
+	opacity: .8
+.header-left-shine10
+	position: absolute
+	width: 10px
+	height: 10px
+	right: -100px
+	bottom: 290px
+	opacity: .8
+.header-right-shine2
+	position: absolute
+	width: 10px
+	height: 10px
+	right: 70px
+	top: 200px
+	opacity: .8
+.team
+	background: url(../img/grid-outline2.svg) no-repeat top center
+	background-size: cover
+	padding-bottom: 280px
+	&-title
+		font-family: "Rajdhani"
+		font-size: 32px
+		font-weight: 600
+		line-height: 1.34
+		text-align: center
+		color: #000a12
+		margin-top: 100px
+	&-subtitle
+		font-family: "Rajdhani"
+		font-size: 46px
+		line-height: 1.26
+		text-align: center
+		color: #4a4a4a
+		max-width: 730px
+		margin: 15px auto 60px
+	&-logo
+		width: 420px
+		height: 420px
+		margin: 0 auto
+		display: block
+.tribe
+	position: relative
+	margin-top: -100px
+	padding-bottom: 60px
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 140px
+		width: 100%
+		height: 65%
+		opacity: .04
+		background-image: linear-gradient(356deg, #54c8fc, #14007a)
+		transform: skewY(5deg)
+	&-title
+		font-family: "Rajdhani"
+		font-size: 46px
+		font-weight: 500
+		line-height: 1.2
+		color: #000000
+		margin-bottom: 50px
+	&-row
+		display: flex
+		justify-content: space-between
+		margin-bottom: 45px
+		background: #ffffff
+		position: relative
+	&-img
+		width: 480px
+	&-block
+		padding: 30px
+		width: 510px
+		box-shadow: 0 20px 21px 0 rgba(0, 0, 0, 0.07)
+	&-name
+		font-size: 24px
+		font-weight: 600
+		line-height: 1.33
+		letter-spacing: 0.2px
+		color: #000a12
+	&-prof
+		font-size: 20px
+		line-height: 1.45
+		letter-spacing: 0.1px
+		color: #35363e
+	&-text
+		font-size: 16px
+		line-height: 1.81
+		letter-spacing: 0.1px
+		color: #4a4a4a
+		margin-top: 15px
+.members
+	margin-top: 30px
+	padding-bottom: 150px
+	&-title
+		font-family: "Rajdhani"
+		font-size: 32px
+		font-weight: bold
+		line-height: 1.34
+		text-align: center
+		color: #000a12
+	&-subtitle
+		font-size: 20px
+		line-height: 1.45
+		letter-spacing: 0.1px
+		text-align: center
+		color: #35363e
+	&-flex
+		display: flex
+		justify-content: space-between
+		margin-top: 110px
+		padding-bottom: 40px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 1168px
+			height: 323px
+			background: url(../img/bg-members.svg) no-repeat center
+			left: -85px
+			top: -65px
+	&-item
+		box-shadow: 0 20px 21px 0 rgba(0, 0, 0, 0.07)
+		background-color: #ffffff
+		min-width: 154px
+		width: 15%
+		padding: 100px 12px 17px 12px
+		position: relative
+		&-name
+			font-size: 16px
+			font-weight: 600
+			line-height: 2
+			letter-spacing: 0.1px
+			color: #000a12
+		&-text
+			font-size: 16px
+			font-weight: 300
+			line-height: 1.31
+			letter-spacing: 0.1px
+			color: #000a12
+	&-top
+		position: absolute
+		left: 0
+		top: -65px
+		width: 100%
+		text-align: center
+		&-fire
+			position: absolute
+			top: 37px
+			left: 30px
+.investor
+	margin-top: 85px
+	&-title
+		font-family: "Rajdhani"
+		font-size: 32px
+		font-weight: bold
+		line-height: 1.34
+		text-align: center
+		color: #000a12
+	&-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 500px
+		margin: 30px auto 0
+	&-manga
+		width: 265px
+	&-target
+		width: 205px
+.script
+	position: relative
+	padding: 120px 0
+	&:after
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background-image: linear-gradient(356deg, #54c8fc, #14007a)
+		transform: skewY(-5deg)
+		z-index: -1
+.team-contact
+	padding: 250px 0 280px
+	position: relative
+	&-after
+		position: absolute
+		left: 0
+		bottom: -220px
+		z-index: -1
+.block-item1
+	width: 232px
+	height: 150px
+	position: absolute
+	left: 15%
+	top: 165px
+.block-item2
+	width: 232px
+	height: 150px
+	position: absolute
+	left: 12%
+	top: 450px
+.block-item3
+	width: 232px
+	height: 150px
+	position: absolute
+	left: 23%
+	top: 350px
+.block-header1
+	width: 232px
+	height: 150px
+	position: absolute
+	left: 38%
+	top: 605px
+.block-header2
+	width: 232px
+	height: 150px
+	position: absolute
+	right: 33%
+	top: 505px
+.load-right-img
+	display: none
 @import "media" // Всегда в конце
