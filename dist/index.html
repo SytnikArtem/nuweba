@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Nuweba</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,400,600,800,900|Rajdhani:400,500,700|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="skew"></div>
+	<header class="header header_main">
+		<div class="container container_fluid container_fluid_main">
+			<div class="desctop">
+				<div class="header-flex">
+					<div class="header-left">
+						<svg class="header-img" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+							<path fill="#FFF" fill-rule="evenodd" d="M17.955 10.488l-1.277-3.597h-.036l-1.259 3.597h-1.651l2.246-5.352h1.382l2.252 5.352h-1.657zM8.28 16.3h5.5v-1.406h-5.5V16.3zm0 2.645h5.5V17.54h-5.5v1.405zM6.364 8.834l-1.03 1.672-1.12-.776 1.257-1.636-1.81-.534.417-1.297L5.853 7l-.108-2.075h1.37L7 7.036l1.738-.718.41 1.317-1.835.533 1.2 1.591-1.112.805-1.038-1.73zm17.158 1.5v-1.44h-1.6V4.938h1.847v-2.48L15.417.818l-4.465 11.359H9.158L13.623.818.16 2.458v2.48h1.82v3.956H.408v1.44l-.442 2.048h1.232l.785-1.555v1.721c0 5.483 4.486 9.97 9.97 9.97 5.483 0 9.97-4.487 9.97-9.97v-1.774l.81 1.607h1.233l-.443-2.047z"/>
+						</svg>
+						<h2 class="header-title">Nuweba</h2>
+					</div>
+					<div class="header-right">
+						<ul class="header-right-list">
+							<li class="header-right-item"><a href="" class="header-right-link">Company</a></li>
+							<li class="header-right-item"><a href="" class="header-right-link">Blog</a></li>
+							<li class="header-right-item"><a href="" class="header-right-btn">
+								<svg class="header-right-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+									<path fill="#4b74ff" fill-rule="evenodd" d="M17.955 10.488l-1.277-3.597h-.036l-1.259 3.597h-1.651l2.246-5.352h1.382l2.252 5.352h-1.657zM8.28 16.3h5.5v-1.406h-5.5V16.3zm0 2.645h5.5V17.54h-5.5v1.405zM6.364 8.834l-1.03 1.672-1.12-.776 1.257-1.636-1.81-.534.417-1.297L5.853 7l-.108-2.075h1.37L7 7.036l1.738-.718.41 1.317-1.835.533 1.2 1.591-1.112.805-1.038-1.73zm17.158 1.5v-1.44h-1.6V4.938h1.847v-2.48L15.417.818l-4.465 11.359H9.158L13.623.818.16 2.458v2.48h1.82v3.956H.408v1.44l-.442 2.048h1.232l.785-1.555v1.721c0 5.483 4.486 9.97 9.97 9.97 5.483 0 9.97-4.487 9.97-9.97v-1.774l.81 1.607h1.233l-.443-2.047z"/>
+								</svg>
+								Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mobile">
+				<div class="header-flex">
+					<svg class="header-img header-img_mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+						<path fill="#FFF" fill-rule="evenodd" d="M17.955 10.488l-1.277-3.597h-.036l-1.259 3.597h-1.651l2.246-5.352h1.382l2.252 5.352h-1.657zM8.28 16.3h5.5v-1.406h-5.5V16.3zm0 2.645h5.5V17.54h-5.5v1.405zM6.364 8.834l-1.03 1.672-1.12-.776 1.257-1.636-1.81-.534.417-1.297L5.853 7l-.108-2.075h1.37L7 7.036l1.738-.718.41 1.317-1.835.533 1.2 1.591-1.112.805-1.038-1.73zm17.158 1.5v-1.44h-1.6V4.938h1.847v-2.48L15.417.818l-4.465 11.359H9.158L13.623.818.16 2.458v2.48h1.82v3.956H.408v1.44l-.442 2.048h1.232l.785-1.555v1.721c0 5.483 4.486 9.97 9.97 9.97 5.483 0 9.97-4.487 9.97-9.97v-1.774l.81 1.607h1.233l-.443-2.047z"></path>
+					</svg>
+					<h2 class="header-title">Nuweba</h2>
+					<div class="header-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+							<defs>
+								<path id="a" d="M3 13a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2H3zm0-6a1 1 0 1 1 0-2h18a1 1 0 0 1 0 2H3zm0 12a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2H3z"/>
+							</defs>
+							<use fill="#fff" fill-rule="nonzero" xlink:href="#a"/>
+						</svg>
+					</div>
+				</div>
+				<div class="mobile-menu-overlay">
+					<div class="mobile-menu-content">
+						<div class="header-flex">
+							<svg class="header-img header-img_mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+								<path fill="#4b74ff" fill-rule="evenodd" d="M17.955 10.488l-1.277-3.597h-.036l-1.259 3.597h-1.651l2.246-5.352h1.382l2.252 5.352h-1.657zM8.28 16.3h5.5v-1.406h-5.5V16.3zm0 2.645h5.5V17.54h-5.5v1.405zM6.364 8.834l-1.03 1.672-1.12-.776 1.257-1.636-1.81-.534.417-1.297L5.853 7l-.108-2.075h1.37L7 7.036l1.738-.718.41 1.317-1.835.533 1.2 1.591-1.112.805-1.038-1.73zm17.158 1.5v-1.44h-1.6V4.938h1.847v-2.48L15.417.818l-4.465 11.359H9.158L13.623.818.16 2.458v2.48h1.82v3.956H.408v1.44l-.442 2.048h1.232l.785-1.555v1.721c0 5.483 4.486 9.97 9.97 9.97 5.483 0 9.97-4.487 9.97-9.97v-1.774l.81 1.607h1.233l-.443-2.047z"></path>
+							</svg>
+							<h2 class="header-title header-title_blue">Nuweba</h2>
+							<div class="header-btn">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+									<defs>
+										<path id="a" d="M3 13a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2H3zm0-6a1 1 0 1 1 0-2h18a1 1 0 0 1 0 2H3zm0 12a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2H3z"></path>
+									</defs>
+									<use fill="#4b74ff" fill-rule="nonzero" xlink:href="#a"></use>
+								</svg>
+							</div>
+						</div>
+						<h2 class="mobile-menu-title">Menu</h2>
+						<ul class="mobile-menu-list">
+							<li class="mobile-menu-item"><a href="" class="mobile-menu-link">Home</a></li>
+							<li class="mobile-menu-item"><a href="" class="mobile-menu-link">Company</a></li>
+							<li class="mobile-menu-item"><a href="" class="mobile-menu-link">Blog</a></li>
+							<li class="mobile-menu-item"><a href="" class="mobile-menu-link">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-main header-main_sm">
+				<h2 class="header-main-title">Application Aware Serverless Security</h2>
+				<p class="header-main-text">Nuweba enables organizations to reap the benefits of serverless, without compromising on security, efficiency or performance</p>
+				<div class="header-left-shine shine">
+					<div class="circle circle_left"></div>
+					<div class="circle circle_right"></div>
+					<div class="circle circle_top"></div>
+				</div>
+				<div class="header-left-shine2 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine3 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine4 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine5 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine6 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine7 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine8 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine9 shine">
+					<div class="circle circle_left"></div>
+				</div>
+				<div class="header-left-shine10 shine">
+					<div class="circle circle_left"></div>
+				</div>
+			</div>
+			<div class="header-right-shine shine">
+				<div class="circle circle_left"></div>
+				<div class="circle circle_right"></div>
+				<div class="circle circle_top"></div>
+			</div>
+			<div class="header-right-shine2 shine">
+				<div class="circle circle_left"></div>
+			</div>
+			<div class="block-header1">
+				<img src="img/travel-function.png" alt="" class="img-responsive">
+			</div>
+			<div class="block-header2">
+				<img src="img/travel-function.png" alt="" class="img-responsive">
+			</div>
+		</div>
+	</header>
+	<section class="section decision">
+		<div class="container">
+			<div class="decision-top">
+				<img src="img/nuwbie-red.svg" class="decision-top-img">
+			</div>
+			<div class="decision-top-left">
+				<img src="img/nuwbie-blue.svg" class="decision-top-img">
+			</div>
+			<div class="decision-flex">
+				<div class="decision-left">
+					<h4 class="decision-subtitle">The only unified solution to serverless security, monitoring and performance.</h4>
+					<p class="decision-text">Nuweba’s application-aware security solution lets you secure your serverless functions simply and seamlessly. This protects you against application-level attacks, and also delivers blazing-fast cold start times and real-time monitoring. We let you take control of your apps, while still enjoying the benefits of abstraction</p>
+				</div>
+				<div class="decision-right">
+					<img src="img/nuwbie-purple.svg" alt="" class="decision-right-img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section security">
+		<div class="container">
+			<h2 class="security-title">The 6 Layers of Nuweba Security</h2>
+			<p class="security-description">Technology, not Voodoo</p>
+			<div class="security-row">
+				<div class="security-item security-item_first">
+					<div class="security-item-left">
+						<img src="img/firewall.svg" alt="" class="security-item-firewall">
+						<img src="img/fire.svg" alt="" class="security-item-fire">
+						<img src="img/head.svg" alt="" class="security-item-head">
+					</div>
+					<div class="security-item-right">
+						<p class="security-item-title">No Container Reuse</p>
+						<p class="security-item-text">Ensuring that functions containers aren’t reused and being destroyed after every invocation, blocking attacker persistence ability</p>
+					</div>
+				</div>
+				<div class="security-item security-item_second">
+					<div class="security-item-left">
+						<img src="img/firewall2.svg" alt="" class="security-item-firewall">
+						<img src="img/fire2.svg" alt="" class="security-item-fire">
+						<img src="img/head.svg" alt="" class="security-item-head">
+					</div>
+					<div class="security-item-right">
+						<p class="security-item-title">Credentials Vault</p>
+						<p class="security-item-text">Secrets, tokens and IAM roles are stored in an inaccessible secured vault outside of the functions containers</p>
+					</div>
+				</div>
+			</div>
+			<div class="security-row security-item_third">
+				<div class="security-item">
+					<div class="security-item-left">
+						<img src="img/firewall3.svg" alt="" class="security-item-firewall">
+						<img src="img/fire3.svg" alt="" class="security-item-fire">
+						<img src="img/head.svg" alt="" class="security-item-head">
+					</div>
+					<div class="security-item-right">
+						<p class="security-item-title">Code Execution Prevention</p>
+						<p class="security-item-text">Observation of normal behavior based on low-level process activities – identifying deviations and malicious acts</p>
+					</div>
+				</div>
+				<div class="security-item security-item_fourth">
+					<div class="security-item-left">
+						<img src="img/firewall4.svg" alt="" class="security-item-firewall">
+						<img src="img/fire4.svg" alt="" class="security-item-fire">
+						<img src="img/head.svg" alt="" class="security-item-head">
+					</div>
+					<div class="security-item-right">
+						<p class="security-item-title">Functions Vulnerability Firewall</p>
+						<p class="security-item-text">Protection against attacks including XSS, SQLI, SSRF, Information Disclosure, XXE, and more</p>
+					</div>
+				</div>
+			</div>
+			<div class="security-row security-item_fifth">
+				<div class="security-item">
+					<div class="security-item-left">
+						<img src="img/firewall5.svg" alt="" class="security-item-firewall">
+						<img src="img/fire5.svg" alt="" class="security-item-fire">
+						<img src="img/head.svg" alt="" class="security-item-head">
+					</div>
+					<div class="security-item-right">
+						<p class="security-item-title">Network Traffic Inspection</p>
+						<p class="security-item-text">Achieve fine-grained control and visibility over functions outbound network traffic, both internet and internal cloud services</p>
+					</div>
+				</div>
+				<div class="security-item security-item_sixth">
+					<div class="security-item-left">
+						<img src="img/firewall6.svg" alt="" class="security-item-firewall">
+						<img src="img/fire6.svg" alt="" class="security-item-fire">
+						<img src="img/head.svg" alt="" class="security-item-head">
+					</div>
+					<div class="security-item-right">
+						<p class="security-item-title">Real time Anomaly Detection</p>
+						<p class="security-item-text">Detection of anomalies in users interactions and internal function flow suspected as malicious, identifying potential attackers</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--<section class="section slider">-->
+		<!--<div class="container">-->
+			<!--<h2 class="slider-title">How The 6 Layers Work</h2>-->
+			<!--<div class="slider-main">-->
+				<!--<div class="slider-main-item">-->
+					<!--<img src="img/slide1.png" alt="">-->
+				<!--</div>-->
+				<!--<div class="slider-main-item">-->
+					<!--<img src="img/slide2.png" alt="">-->
+				<!--</div>-->
+				<!--<div class="slider-main-item">-->
+					<!--<img src="img/slide3.png" alt="">-->
+				<!--</div>-->
+				<!--<div class="slider-main-item">-->
+					<!--<img src="img/slide4.png" alt="">-->
+				<!--</div>-->
+				<!--<div class="slider-main-item">-->
+					<!--<img src="img/slide5.png" alt="">-->
+				<!--</div>-->
+				<!--<div class="slider-main-item">-->
+					<!--<img src="img/slide6.png" alt="">-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</section>-->
+	<section class="section deep">
+		<div class="container">
+			<div class="deep-flex">
+				<div class="deep-left">
+					<img src="img/deep-visibilty-graphic.svg" alt="" class="deep-left-img">
+				</div>
+				<div class="deep-right">
+					<h2 class="deep-right-title">Serverless Apps Deep Visibility</h2>
+					<p class="deep-right-text">Real time visibility and monitoring into your functions behavior and flow charts.
+						Whether it's security or DevOps incidents, Nuweba lets you detect and solve problems in real-time and gain insights that will help improve your serverless apps</p>
+				</div>
+			</div>
+			<div class="deep-bottom">
+				<div class="deep-bottom-right">
+					<img src="img/angel-modex.png" alt="" class="img-responsive">
+				</div>
+				<div class="deep-bottom-left">
+					<img src="img/hi-level.png" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section click">
+		<div class="container">
+			<h2 class="click-title">One Click,<br> Seamless Integration</h2>
+			<p class="click-text">We completely understand the importance of being low-touch and seamless and securing all your functions without demanding pesky code or changes to your functions. Deploying Nuweba is very quick, simple and hustle/headache free.</p>
+			<div class="click-block">
+				<div class="click-left">
+					<img src="img/start-time.svg" alt="" class="click-img">
+				</div>
+				<div class="click-right">
+					<p class="click-right-text">Oh, and we reduce cold start times. Dramatically!</p>
+				</div>
+			</div>
+			<div class="click-platforms">
+				<h4 class="click-platforms-title">Supported Platforms</h4>
+				<div class="click-platforms-flex">
+					<div class="click-platforms-item">
+						<img src="img/logo-1.png" alt="" width="45" class="logo1">
+					</div>
+					<div class="click-platforms-item">
+						<img src="img/logo-2.png" alt="" width="59" class="logo2">
+					</div>
+					<div class="click-platforms-item">
+						<img src="img/logo-3.png" alt="" width="56" class="logo3">
+					</div>
+					<div class="click-platforms-item">
+						<img src="img/logo-4.png" alt="" width="53" class="logo4">
+					</div>
+				</div>
+			</div>
+			<div class="click-platforms click-platforms_sm">
+				<h4 class="click-platforms-title">Supported Runtimes</h4>
+				<div class="click-platforms-flex">
+					<div class="click-platforms-item">
+						<img src="img/node.png" alt="" width="145" class="logo5">
+					</div>
+					<div class="click-platforms-item">
+						<img src="img/python-logo.png" alt="" width="141" class="logo6">
+					</div>
+					<div class="click-platforms-item">
+						<img src="img/go-logo.png" alt="" width="39" class="logo7">
+					</div>
+					<div class="click-platforms-item">
+						<img src="img/java.png" alt="" width="35" class="logo8">
+					</div>
+					<div class="click-platforms-item">
+						<img src="img/microsoft-logo.png" alt="" width="145" class="logo9">
+					</div>
+				</div>
+			</div>
+			<div class="click-bottom">
+				<h2 class="click-bottom-title">The Tribe Has Spoken</h2>
+				<p class="click-bottom-text">«The nuweba platform is actually better then our own.<br> If it was up to me, I’d use it.»</p>
+				<p class="click-bottom-autor">Steve Bezos</p>
+				<p class="click-bottom-description">Amazon</p>
+				<div class="click-bottom-fire click-bottom-fire_left">
+					<img src="img/torch.svg" alt="" class="click-bottom-img">
+				</div>
+				<div class="click-bottom-fire click-bottom-fire_right">
+					<img src="img/torch.svg" alt="" class="click-bottom-img">
+				</div>
+				<div class="click-line">
+					<div class="click-line-left">
+						<img src="img/leaf-copy.svg" alt="">
+					</div>
+					<div class="click-line-center">
+						<img src="img/leaf-copy-4.svg" alt="">
+					</div>
+					<div class="click-line-right">
+						<img src="img/leaf-copy.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section load">
+		<div class="container container_fluid">
+			<div class="load-flex">
+				<div class="load-left">
+					<img src="img/nuweba-manuscript.png" alt="" class="load-left-img">
+					<div class="load-left-shine">
+						<div class="circle circle_left"></div>
+						<div class="circle circle_right"></div>
+					</div>
+				</div>
+				<div class="load-right">
+					<h2 class="load-right-title">The Nuweba Manuscript</h2>
+					<h4 class="load-right-subtitle">How Serverless Security Solves Top Serverless Challenges</h4>
+					<img src="img/nuweba-manuscript.png" alt="" class="load-right-img">
+					<button type="button" class="load-btn">Download The Manuscript</button>
+				</div>
+			</div>
+			<div class="load-slider">
+				<h2 class="load-slider-title">Latest From the Blog</h2>
+				<div class="load-slider-block">
+					<div class="load-item">
+						<div class="load-slider-top">
+							<img src="" alt="">
+						</div>
+						<div class="load-slider-bottom">
+							<h4 class="load-item-title">What is Serverless</h4>
+							<p class="load-item-text">The Earth was small, light blue, and so touchingly alone.</p>
+						</div>
+					</div>
+					<div class="load-item">
+						<div class="load-slider-top">
+							<img src="" alt="">
+						</div>
+						<div class="load-slider-bottom">
+							<h4 class="load-item-title">What is Serverless</h4>
+							<p class="load-item-text">The Earth was small, light blue, and so touchingly alone.</p>
+						</div>
+					</div>
+					<div class="load-item">
+						<div class="load-slider-top">
+							<img src="" alt="">
+						</div>
+						<div class="load-slider-bottom">
+							<h4 class="load-item-title">What is Serverless</h4>
+							<p class="load-item-text">The Earth was small, light blue, and so touchingly alone.</p>
+						</div>
+					</div>
+					<div class="load-item">
+						<div class="load-slider-top">
+							<img src="" alt="">
+						</div>
+						<div class="load-slider-bottom">
+							<h4 class="load-item-title">What is Serverless</h4>
+							<p class="load-item-text">The Earth was small, light blue, and so touchingly alone.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="load-center-shine">
+			<div class="circle circle_left"></div>
+			<div class="circle circle_right"></div>
+			<div class="circle circle_top"></div>
+		</div>
+	</section>
+	<section class="section contact">
+		<div class="container">
+			<div class="contact-flex">
+				<div class="contact-left">
+					<h2 class="contact-left-title">Contact The Tribe Leaders</h2>
+					<p class="contact-left-text">Unlike our ancestors before us,<br>
+						We are accessbile not only through smoke signals and esoteric rituals, Send us an email.</p>
+				</div>
+				<div class="contact-right">
+					<form action="" class="contact-right-form">
+						<input type="text" name="name" class="contact-right-input" placeholder="Name">
+						<input type="email" name="email" class="contact-right-input" placeholder="Email">
+						<input type="text" name="phone" class="contact-right-input" placeholder="Phone">
+						<input type="text" name="message" class="contact-right-input" placeholder="Message">
+						<button type="submit" class="contact-right-btn">Contact us</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="contact-after">
+			<img src="img/nuwbie-1.svg" alt="" class="contact-after-img desctop-img">
+			<img src="img/nuwbie-mob.svg" alt="" class="contact-after-img mob-img">
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-flex">
+				<div class="footer-subscribe subscribe footer-flex-item">
+					<h4 class="footer-title">Subscribe</h4>
+					<input type="email" class="subscribe-input" placeholder="Email">
+					<button type="button" class="subscribe-btn">Subscribe</button>
+				</div>
+				<div class="footer-follow footer-flex-item follow">
+					<h4 class="footer-title">Follow us</h4>
+					<div class="follow-flex">
+						<a href="" class="follow-link">
+							<svg class="follow-link-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+								<defs>
+									<path id="a" d="M0 0h24v24H0z"/>
+									<path id="b" d="M2.214 1C1.544 1 1 1.544 1 2.214v19.572C1 22.456 1.544 23 2.214 23h10.537v-8.52H9.884v-3.32h2.867V8.712c0-2.842 1.735-4.39 4.27-4.39 1.214 0 2.258.091 2.562.132v2.97h-1.758c-1.379 0-1.645.655-1.645 1.616v2.12h3.287l-.428 3.32h-2.86V23h5.607c.67 0 1.214-.544 1.214-1.214V2.21C23 1.54 22.456 1 21.786 1H2.214z"/>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<mask id="c" fill="#fff">
+										<use xlink:href="#b"/>
+									</mask>
+									<g fill="#b8c1cb" mask="url(#c)">
+										<path d="M0 0h24v24H0z"/>
+									</g>
+								</g>
+							</svg>
+						</a>
+						<a href="" class="follow-link">
+							<svg class="follow-link-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+								<defs>
+									<path id="aa" d="M0 0h24v24H0z"/>
+									<path id="bb" d="M19.525 4.294a4.452 4.452 0 0 0-3.294-1.46c-2.49 0-4.512 2.072-4.512 4.627 0 .363.039.715.116 1.054-3.75-.193-7.076-2.033-9.304-4.837a4.712 4.712 0 0 0-.61 2.33c0 1.604.796 3.021 2.008 3.851a4.431 4.431 0 0 1-2.046-.577v.057c0 2.243 1.556 4.115 3.622 4.538a4.398 4.398 0 0 1-2.039.081c.575 1.838 2.24 3.177 4.216 3.213A8.913 8.913 0 0 1 1 19.089a12.564 12.564 0 0 0 6.919 2.078c8.303 0 12.842-7.051 12.842-13.168 0-.202-.004-.402-.011-.6A9.26 9.26 0 0 0 23 5.004a8.84 8.84 0 0 1-2.592.728 4.62 4.62 0 0 0 1.985-2.56 8.874 8.874 0 0 1-2.868 1.122z"/>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<mask id="cc" fill="#fff">
+										<use xlink:href="#bb"/>
+									</mask>
+									<g fill="#b8c1cb" mask="url(#cc)">
+										<path d="M0 0h24v24H0z"/>
+									</g>
+								</g>
+							</svg>
+						</a>
+						<a href="" class="follow-link">
+							<svg class="follow-link-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+								<defs>
+									<path id="aaa" d="M0 0h24v24H0z"/>
+									<path id="bbb" d="M5.923 23h-4.56V8.305h4.56V23zM3.644 6.296A2.646 2.646 0 0 1 1 3.647 2.646 2.646 0 0 1 3.644 1a2.647 2.647 0 0 1 2.643 2.647 2.647 2.647 0 0 1-2.643 2.649zM23 23h-4.556v-7.147c0-1.704-.031-3.896-2.37-3.896-2.371 0-2.736 1.856-2.736 3.773V23H8.783V8.305h4.373v2.008h.061c.609-1.156 2.096-2.374 4.314-2.374 4.617 0 5.469 3.044 5.469 7V23z"/>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<mask id="ccc" fill="#fff">
+										<use xlink:href="#bbb"/>
+									</mask>
+									<g fill="#b8c1cb" mask="url(#ccc)">
+										<path d="M0 0h24v24H0z"/>
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-menu footer-flex-item">
+					<h4 class="footer-title">Menu</h4>
+					<ul class="footer-menu-list">
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Home</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Company</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Blog</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu footer-flex-item">
+					<h4 class="footer-title">Legal</h4>
+					<ul class="footer-menu-list">
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Terms & Conditions</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Privacy Policy</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<svg class="footer-bottom-img" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+					<path fill="#FFF" fill-rule="evenodd" d="M17.955 10.488l-1.277-3.597h-.036l-1.259 3.597h-1.651l2.246-5.352h1.382l2.252 5.352h-1.657zM8.28 16.3h5.5v-1.406h-5.5V16.3zm0 2.645h5.5V17.54h-5.5v1.405zM6.364 8.834l-1.03 1.672-1.12-.776 1.257-1.636-1.81-.534.417-1.297L5.853 7l-.108-2.075h1.37L7 7.036l1.738-.718.41 1.317-1.835.533 1.2 1.591-1.112.805-1.038-1.73zm17.158 1.5v-1.44h-1.6V4.938h1.847v-2.48L15.417.818l-4.465 11.359H9.158L13.623.818.16 2.458v2.48h1.82v3.956H.408v1.44l-.442 2.048h1.232l.785-1.555v1.721c0 5.483 4.486 9.97 9.97 9.97 5.483 0 9.97-4.487 9.97-9.97v-1.774l.81 1.607h1.233l-.443-2.047z"/>
+				</svg>
+				<p class="footer-bottom-text">© Nuweba 2018</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
