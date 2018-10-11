@@ -20,6 +20,18 @@
     width: 230px
   .contact-after
     bottom: -120px
+  .tribe-row
+    width: 900px
+    margin: 0 auto 40px
+  .members-flex:before
+    display: none
+  .tribe
+    overflow: hidden
+  .team-contact-after
+    width: 230px
+  .tribe-title
+    max-width: 900px
+    margin: 0 auto 50px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   .header:after, .header:before
@@ -182,6 +194,26 @@
     top: -170px
   .shine
     display: none
+  .tribe-row
+    width: 700px
+  .tribe-block
+    padding: 20px
+  .tribe-text
+    font-size: 14px
+    margin-top: 10px
+    line-height: 1.3
+  .tribe-name
+    font-size: 20px
+  .tribe-prof
+    font-size: 18px
+  .click-bottom-fire_lefttribe
+    top: 0
+  .click-bottom-fire_righttribe
+    top: 0
+  .team
+    padding-bottom: 150px
+  .tribe-title
+    max-width: 700px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .menu-list
@@ -304,17 +336,64 @@
     font-size: 42px
   .contact-right
     width: 100%
-  .contact-after-img.mob
+  .mob-img
     display: block
     width: 300px
   .contact-after
     left: 50%
     transform: translateX(-50%)
     bottom: -95px
-  .contact-after-img.desctop
+  .desctop-img
     display: none
   .click
     overflow: hidden
+  .contact-left-text
+    margin-bottom: 30px
+  .tribe-row
+    width: 380px
+  .tribe-block
+    padding: 10px
+  .tribe-name
+    font-size: 14px
+  .tribe-prof
+    font-size: 12px
+  .tribe-text
+    font-size: 8px
+    line-height: 1.2
+  .click-bottom-fire_lefttribe .click-bottom-img, .click-bottom-fire_righttribe .click-bottom-img
+    width: 75px
+  .click-bottom-fire_lefttribe
+    left: -45px
+  .click-bottom-fire_righttribe
+    right: -45px
+  .tribe-title
+    max-width: 380px
+    font-size: 38px
+    margin-bottom: 30px
+  .team-title
+    margin-top: 50px
+  .team-subtitle
+    font-size: 38px
+  .members-flex
+    flex-wrap: wrap
+  .members-item
+    width: 30%
+    max-width: 30%
+  .members-item
+    margin-top: 110px
+  .members-flex
+    margin-top: 0
+  .investor
+    margin-top: 50px
+  .members
+    padding-bottom: 100px
+  .team-contact
+    padding: 150px 0 400px
+  .team-contact-after
+    left: 50%
+    transform: translateX(-50%)
+    width: auto
+    bottom: -95px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   .header-post-title
@@ -356,6 +435,187 @@
     padding-bottom: 10px
   .post-item-name
     font-size: 16px
+  .header-main-title
+    font-size: 32px
+    line-height: 1.34
+  .header-main-text
+    font-size: 16px
+    line-height: 1.63
+  .decision-subtitle
+    font-size: 22px
+  .decision-text
+    font-size: 14px
+    line-height: 1.93
+  .decision-top-img
+    width: 200px
+  .decision-top
+    left: -60px
+  .decision-right-img
+    width: 300px
+  .security-title
+    font-size: 28px
+  .security-description
+    font-size: 22px
+    margin: 10px 0 30px
+  .security-item-left
+    width: 80px
+  .security-item-firewall
+    width: 60px
+  .security-item
+    padding: 15px 10px
+  .security-item-text
+    font-size: 12px
+    margin-top: 5px
+  .security-item-title
+    font-size: 14px
+  .security-item-head
+    width: 35px
+    height: 50px
+    bottom: 5px
+  .deep-left-img
+    width: 100%
+  .deep-left:before
+    width: 320px
+    left: calc(50% - 160px)
+  .deep-right-title
+    font-size: 22px
+  .deep-right-text
+    font-size: 14px
+    line-height: 1.93
+  .deep-bottom-right, .deep-bottom-left
+    width: 100%
+  .deep-bottom-right:before
+    width: 180px
+    background-size: contain
+    right: 15px
+    top: 80px
+  .click-title
+    font-size: 28px
+    line-height: 1.25
+  .click-text
+    font-size: 14px
+    line-height: 1.93
+  .click-block
+    flex-direction: column
+  .click-right-text
+    text-align: center
+  .click-right
+    margin: 30px 0 0
+  .click-platforms-item .logo1
+    width: 22px
+  .click-platforms-item .logo2
+    width: 30px
+  .click-platforms-item .logo3
+    width: 28px
+  .click-platforms-item .logo4
+    width: 27px
+  .click-platforms-item
+    min-width: 45px
+    margin: 0 10px
+  .logo5
+    width: 76px
+    margin-bottom: 10px
+  .logo6
+    width: 76px
+  .logo7
+    width: 20px
+  .logo8
+    width: 25px
+  .logo9
+    width: 74px
+  .click-bottom-title
+    font-size: 22px
+  .click-bottom-text
+    font-size: 14px
+    line-height: 1.5
+  .click-bottom
+    margin-top: 170px
+  .click-bottom-autor
+    font-size: 10px
+    margin-top: 15px
+  .click-bottom-description
+    font-size: 8px
+  .load-right-title
+    font-size: 22px
+  .load
+    padding-top: 200px
+  .load-right-subtitle
+    font-size: 28px
+    line-height: 1.18
+  .load-right-img
+    width: 270px
+  .load-btn
+    width: 100%
+    height: 68px
+    font-size: 18px
+  .load-slider-title
+    font-size: 28px
+  .load-item-title
+    font-size: 20px
+  .load-item-text
+    font-size: 15px
+    line-height: 1.33
+  .contact-left-title
+    font-size: 32px
+    line-height: 1.22
+  .contact-left-text
+    font-size: 14px
+    line-height: 1.93
+    margin: 10px 0 30px
+  .contact-right-input
+    margin-bottom: 20px
+  .contact-right-btn
+    width: 100%
+    height: 68px
+  .decision-right
+    margin-right: -35px
+  .decision-flex
+    overflow: hidden
+  .team-title
+    font-size: 20px
+  .team-subtitle
+    font-size: 20px
+    margin-bottom: 15px
+  .team-logo
+    width: 100%
+    max-width: 300px
+    height: auto
+  .tribe-row
+    max-width: 260px
+  .tribe-block
+    padding: 5px
+  .tribe-name
+    font-size: 10px
+    line-height: 1
+  .click-bottom-fire_righttribe, .click-bottom-fire_lefttribe
+    top: -40px
+  .tribe-prof
+    font-size: 8px
+  .tribe-text
+    font-size: 6px
+    margin-top: 0
+  .team-contact
+    padding-top: 100px
+  .members-item-text
+    font-size: 9px
+  .members-item-name
+    font-size: 12px
+  .members-top img
+    width: 60px
+  .members-item
+    padding-top: 70px
+  .members-top
+    top: -35px
+  .members-item
+    margin-top: 70px
+  .click-bottom-fire_left img
+    width: 100px
+  .click-bottom-fire_left
+    top: -80px
+  .click-bottom-fire_right img
+    width: 100px
+  .click-bottom-fire_right
+    top: -80px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

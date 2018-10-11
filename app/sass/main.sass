@@ -25,7 +25,14 @@
 *:-ms-input-placeholder
 	color: #000000
 	opacity: 1
-
+.subscribe-input::-webkit-input-placeholder
+	color: #979797
+.subscribe-input:-moz-placeholder
+	color: #979797
+.subscribe-input::-moz-placeholder
+	color: #979797
+.subscribe-input:-ms-input-placeholder
+	color: #979797
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -969,7 +976,9 @@ body
 			line-height: 1.33
 			letter-spacing: 0.1px
 			color: #ffffff
-.mob
+.logo5
+	margin-bottom: 10px
+.mob-img
 	display: none
 .load-item
 	margin: 0 10px
@@ -1276,8 +1285,8 @@ body
 	&-item
 		box-shadow: 0 20px 21px 0 rgba(0, 0, 0, 0.07)
 		background-color: #ffffff
-		min-width: 154px
-		width: 15%
+		max-width: 154px
+		width: 16%
 		padding: 100px 12px 17px 12px
 		position: relative
 		&-name
