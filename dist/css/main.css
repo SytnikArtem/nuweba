@@ -361,11 +361,15 @@ body {
         flex-wrap: wrap; }
   .post-item {
     width: 49%;
+    display: none;
     max-width: 480px;
     background: #ffffff;
     -webkit-box-shadow: 0 20px 21px 0 rgba(0, 0, 0, 0.07);
             box-shadow: 0 20px 21px 0 rgba(0, 0, 0, 0.07);
     margin-bottom: 65px; }
+.post-item.active, .post-item.show {
+  display: block;
+}
     .post-item-main {
       padding: 30px 30px 25px 30px; }
     .post-item-title {

@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="517e47d7-09f6-41d6-b25e-63785fa36ad4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/head2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/head2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_media.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/fonts/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/angel-modex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/bg-color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/go-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/head2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/head2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/hi-level.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/inner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/inner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/java.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo-magma.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/logo-magma.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo-target-global.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/logo-target-global.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/microsoft-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/node.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/nuweba-manuscript.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/nuweba-manuscript.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/post.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/post.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/python-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/rectangle.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/rectangle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/rectangle2.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/rectangle2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/slide1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/slide2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/slide3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/slide4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/slide5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/slide6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/travel-function.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/travel-function.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-    </list>
+    <list default="true" id="517e47d7-09f6-41d6-b25e-63785fa36ad4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -174,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/dist/inner.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="554">
-              <caret line="243" column="34" lean-forward="true" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="34" />
+              <caret line="243" column="34" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -333,7 +286,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orange/dist" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -367,12 +320,12 @@
       <workItem from="1539156966324" duration="27240000" />
       <workItem from="1539184463786" duration="344000" />
       <workItem from="1539238355713" duration="9357000" />
-      <workItem from="1540189012473" duration="14147000" />
+      <workItem from="1540189012473" duration="14501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90043000" />
+    <option name="totallyTimeSpent" value="90397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -629,7 +582,7 @@
     <entry file="file://$PROJECT_DIR$/dist/inner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
-          <caret line="243" column="34" lean-forward="true" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="34" />
+          <caret line="243" column="34" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="34" />
         </state>
       </provider>
     </entry>
