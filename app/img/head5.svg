@@ -38,9 +38,9 @@
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
             <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
         </filter>
-        <linearGradient id="l" x1="50%" x2="50%" y1="0%" y2="97.97%">
-            <stop offset="0%" stop-color="#6188FA"/>
-            <stop offset="100%" stop-color="#0EC9F3"/>
+        <linearGradient id="l" x1="50%" x2="50%" y1="95.202%" y2="3.57%">
+            <stop offset="0%" stop-color="#51ECCC"/>
+            <stop offset="100%" stop-color="#7AC65B"/>
         </linearGradient>
         <linearGradient id="m" x1="80.868%" x2="51.177%" y1="85.668%" y2="99.454%">
             <stop offset="0%" stop-color="#FDFEFF"/>

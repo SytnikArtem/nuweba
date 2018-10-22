@@ -52,14 +52,14 @@ gulp.task('libs-js', function(){
 });
 
 gulp.task('tiny', function(){
-  return gulp.src('app/img/**/*.+(png|jpg|jpeg)')
-    .pipe(cache(tinypng({
-      key: 'IVBCPg0Rjh1AsWpQzuH9VSK5qla51OIx',
-      sigFile: 'images/.tinypng-sigs',
-      sameDest: true,
-      log: true
-    })))
-    .pipe(gulp.dest('dist/img'));
+  // return gulp.src('app/img/**/*.+(png|jpg|jpeg)')
+  //   .pipe(cache(tinypng({
+  //     key: 'IVBCPg0Rjh1AsWpQzuH9VSK5qla51OIx',
+  //     sigFile: 'images/.tinypng-sigs',
+  //     sameDest: true,
+  //     log: true
+  //   })))
+  //   .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('img', ['tiny'], function(){

@@ -38,13 +38,17 @@
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
             <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
         </filter>
-        <linearGradient id="l" x1="50%" x2="50%" y1="0%" y2="97.97%">
-            <stop offset="0%" stop-color="#6188FA"/>
-            <stop offset="100%" stop-color="#0EC9F3"/>
+        <linearGradient id="l" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#EE5663"/>
+            <stop offset="98.124%" stop-color="#EE667A"/>
         </linearGradient>
         <linearGradient id="m" x1="80.868%" x2="51.177%" y1="85.668%" y2="99.454%">
             <stop offset="0%" stop-color="#FDFEFF"/>
             <stop offset="100%" stop-color="#F7B0B0" stop-opacity=".425"/>
+        </linearGradient>
+        <linearGradient id="p" x1="50%" x2="50%" y1="0%" y2="98.124%">
+            <stop offset="0%" stop-color="#EE5663"/>
+            <stop offset="100%" stop-color="#EE667A"/>
         </linearGradient>
         <path id="o" d="M7.571 32.764c0-1.03-2.863-5.436 4.728-17.354C13.933 12.845 18.998 7.742 27.495.1c-.29 5.899-1.529 10.662-3.714 14.29C19.666 21.22 7.57 33.522 7.57 32.765z"/>
         <filter id="n" width="168.4%" height="142.8%" x="-34.2%" y="-15.3%" filterUnits="objectBoundingBox">
@@ -83,7 +87,7 @@
             <path stroke="url(#m)" stroke-linecap="round" stroke-width=".5" d="M8.402 31.018C6.734 29.242 5.5 27.463 4.7 25.68c-.8-1.783-1.665-4.674-2.592-8.675" transform="matrix(-1 0 0 1 56 1)"/>
             <g opacity=".99" transform="matrix(-1 0 0 1 56 1)">
                 <use fill="#000" filter="url(#n)" xlink:href="#o"/>
-                <use fill="url(#l)" xlink:href="#o"/>
+                <use fill="url(#p)" xlink:href="#o"/>
             </g>
             <path stroke="url(#m)" stroke-width=".5" d="M8.763 31.77s-.346-2.105 3.389-8.173c.548-.891 4.474-5.912 5.624-7.085 1.544-1.574 2.757-3.486 3.64-5.735" transform="matrix(-1 0 0 1 56 1)"/>
         </g>
