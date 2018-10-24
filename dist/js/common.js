@@ -25,4 +25,15 @@ $(document).ready(function() {
           },
       ]
     });
+    $('.slider-top').slick({
+      slidesToShow: 1,
+      asNavFor: '.slider-main'
+    });
+    $('.slider-main').slick({
+      slidesToShow: 1,
+      arrows: false,
+      asNavFor: '.slider-top',
+      adaptiveHeight: true,
+      dots: true
+    });
 });
